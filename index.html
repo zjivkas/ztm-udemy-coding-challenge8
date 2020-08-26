@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>ZTM-Udemy Coding Challenge-8</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="assets/css/page-style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/hexagons.min.css"> 
+  <!-- Bootstrap core CSS     -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0" rel="stylesheet"/>
+  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css"> 
+</head>
+
+
+<body class="index-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-warning fixed-top navbar-transparent " color-on-scroll="100">
+     
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" rel="tooltip" title="An app for Beekeepers!" data-placement="bottom" target="_blank"><h6>Beekeepers.</h6>
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end change-color">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Sign-up for the launch" data-placement="bottom" href="https://mailchi.mp/115cbbfca1f4/beekeepers" target="_self">
+                            <p class="signup">Sign-up</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <p class="d-lg-none d-xl-none">Twitter</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                            <p class="d-lg-none d-xl-none">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <p class="d-lg-none d-xl-none">Instagram</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper">
+        <div class="page-header clear-filter filter-for-photo">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('https://images.unsplash.com/photo-1573762462482-d8acd37ffa1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1958&q=80');">
+            </div>
+            <div class="container">
+                <div class="content-center brand">
+                    <h1 class="h1-seo">Beekeepers.</h1>
+                    <h3>An app to Find Bees. Talk Hives. Sell Honey. Trade Equiptment.</h3>
+                        <div class="clock-container">
+                                <ul rel="tooltip" title="Countdown until Launch!" data-placement="bottom">
+                                <li class="clock"><span id="days"></span>days</li>
+                                <li class="clock"><span id="hours"></span>hours</li>
+                                <li class="clock"><span id="minutes"></span>minutes</li>
+                                </ul>
+                                <script>
+                                    const second = 1000,
+                                    minute = second * 60,
+                                    hour = minute * 60,
+                                    day = hour * 24;
+    
+                                let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
+                                    x = setInterval(function() {    
+    
+                                    let now = new Date().getTime(),
+                                        distance = countDown - now;
+    
+                                    document.getElementById('days').innerText = Math.floor(distance / (day)),
+                                        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                                        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                                        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+    
+                                    //do something later when date is reached
+                                    //if (distance < 0) {
+                                    //  clearInterval(x);
+                                    //  'IT'S MY BIRTHDAY!;
+                                    //}
+    
+                                    }, second)
+                                </script>
+                        </div>
+
+                    <button class="btn btn-primary btn-icon btn-round" type="button" >
+                        <a href="https://mailchi.mp/115cbbfca1f4/beekeepers" target="_blank"><i class="now-ui-icons ui-2_favourite-28"></i><p class="p-btn">SIGN-UP</p></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+
+            <div class="section section-basic">
+                <div class="container text-center mt-5">
+                    <div class="card card-nav-tabs card-plain">
+                            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                        <div class="nav-tabs-navigation">
+                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                <li class="nav-item hb inv hb-md hb-custom hidden-xs">
+                                    <a class="nav-link active" data-toggle="modal" data-target="#exampleModal"><span><i class="now-ui-icons users_circle-08" style="font-size: 5rem;"></span></i>Log-in</a>
+                                </li>
+                                <li class="nav-item hb inv hb-sm hb-custom visible-xs">
+                                    <a class="nav-link navsm" data-toggle="modal" data-target="#exampleModal"><span><i class="now-ui-icons users_circle-08" style="font-size: 5rem"></span></i><p class="p-xs">Log-in</p></a>
+                                </li>
+                                <li class="nav-item hb inv hb-md hb-custom hidden-xs">
+                                    <a class="nav-link" href="#market" data-toggle="tab"><span><i class="now-ui-icons shopping_cart-simple" style="font-size: 5rem"></span></i>Shop</a>
+                                </li>
+                                <li class="nav-item hb inv hb-sm hb-custom visible-xs">
+                                    <a class="nav-link navsm" href="#market" data-toggle="tab"><span><i class="now-ui-icons shopping_cart-simple" style="font-size: 5rem"></span></i><p class="p-xs">Shop</p></a>
+                                </li>
+                                <li class="nav-item hb inv hb-md hb-custom hidden-xs">
+                                    <a class="nav-link" href="#forum" data-toggle="tab"><span><i class="now-ui-icons ui-2_chat-round" style="font-size: 5rem"></span></i><br>Forum</a>
+                                </li>
+                                <li class="nav-item hb inv hb-sm hb-custom visible-xs">
+                                    <a class="nav-link navsm" href="#forum" data-toggle="tab"><span><i class="now-ui-icons ui-2_chat-round" style="font-size: 5rem;"></span></i><p class="p-xs">Forum</p></a>
+                                </li>
+                                <li class="nav-item hb inv hb-md hb-custom hidden-xs">
+                                    <a class="nav-link" href="#app" data-toggle="tab"><span><i class="now-ui-icons tech_laptop" style="font-size: 5rem"></span></i><br>App</a>
+                                </li>
+                                <li class="nav-item hb inv hb-sm hb-custom visible-xs">
+                                    <a class="nav-link navsm" href="#app" data-toggle="tab"><span><i class="now-ui-icons tech_laptop" style="font-size: 5rem"></span></i><p class="p-xs">App</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="modal fade in" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Member's area</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="feature-title">Please sign-in</h3>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text"><i class="fa fa-user-circle"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" placeholder="User email" name="email">
+                                      </div>    
+                                    <div class="form-group">
+                                      <input type="password" class="form-control" placeholder="User password" name="password">
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><a class="click-me" href="https://mailchi.mp/115cbbfca1f4/beekeepers" target="_blank">New account?</a></button>
+                                </div>        
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Log-in</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>    
+                </div>
+
+
+                        
+                        <div class="card-body ">
+                            <div class="tab-content text-center">
+                                <div class="tab-pane" id="market">
+                                    <div class="card cardinfo" style="width: 50rem;">
+                                        <img src="Images/pollination.png" class="pollination-img">
+                                        <div class="card-body">
+                                          <h4 class="card-title">Shop!</h4>
+                                          <p class="card-text">Need honey? Find a beekeeper near you. Want to sell honey? This is your one stop market.</p>
+                                          <button type="button" class="btn btn-primary shopbtn" data-toggle="modal" data-target="#mapModal" data-original-title="Search for products near you!" rel="tooltip" data-placement="right">Launch Map</button>
+                                            </a>
+                                        </button>
+                                        <div class="modal fade in" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                           <div class="modal-dialog" role="document">
+                                               <div class="modal-content">
+                                               <div class="modal-header">
+                                                   <h5 class="modal-title" id="exampleModalLabel">Honey search demo</h5>
+                                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                   <span aria-hidden="true">&times;</span>
+                                                   </button>
+                                               </div>
+                                               <div class="modal-body">
+                                                   <p>Join now to make a free public sale listing!</p>
+                                                   <!--The div element for the map -->
+                                                   <!-- Search input -->
+                                                   <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+                                                   <!-- Google map -->
+                                                   <div id="map"></div>
+                                                   <script>
+                                                   // Initialize and add the map
+                                                   function initMap() {
+                                                   // The location of Uluru
+                                                   var uluru = {lat: -25.344, lng: 131.036};
+                                                   // The map, centered at Uluru
+                                                   var map = new google.maps.Map(
+                                                   document.getElementById('map'), {zoom: 4, center: uluru});
+                                                   // The marker, positioned at Uluru
+                                                   var marker = new google.maps.Marker({position: uluru, map: map});
+                                                   }
+                                                   </script>
+                                                   <!--Load the API from the specified URL
+                                                   * The async attribute allows the browser to render the page while the API loads
+                                                   * The key parameter will contain your own API key (which is not needed for this tutorial)
+                                                   * The callback parameter executes the initMap() function
+                                                   -->
+                                                   <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBkv7WSjR6t3eEUJ8YxMkBAL_Kzfth8XTM&callback=initMap" async defer></script>
+                                                   </script>
+                                               </div>
+                                               <div class="modal-footer">
+                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                   <button type="button" class="btn btn-primary"><a class="click-me" href="https://mailchi.mp/115cbbfca1f4/beekeepers" target="_blank">Sign-up!</a></button>
+                                               </div>
+                                               </div>
+                                           </div>
+                                       </div>   
+                                        </div>
+                                      <!-- </div> -->
+                
+                                        <div class="col-sm">
+                                            <!-- Button trigger modal -->
+                                            <img src="Images/market.png" class="market-img">
+        
+                                        </div> 
+                                    </div>
+                                </div>       
+                                <div class="tab-pane" id="forum">
+                                    <div class="card cardinfo" style="width: 50rem;">
+                                        <img src="Images/apiary-management.png" class="pollination-img"> 
+                                        <div class="card-body">
+                                          <h4 class="card-title">Talk bees and beekeeping on our beekeeper moderated forums.</h4>
+                                          <p class="card-text"><strong>One stop shop:</strong> Find articles in one place for Bee related news.</p>
+                                          <p><strong>Technology curated articles:</strong> Worker-bots are like worker bees combing the internet for bee related content.</p></p>
+                                          <a href="https://mailchi.mp/115cbbfca1f4/beekeepers" class="btn btn-primary">Sign-up</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="tab-pane" id="app">
+                                    <img src="Images/quicky.png" class="app-img">
+                                </div>        
+                            </div>    
+                        </div>        
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item">
+                            <img class="d-block" src="Images/insideHive.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Our Forum worker-bots comb other websites to curate recent topics and articles related to bees.</h5>
+                            </div>
+                            </div>
+                            <div class="carousel-item active">
+                            <img class="d-block" src="Images/learningBees.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Our forum is moderated by beekeepers!</h5>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block" src="Images/beeKeeper.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Talk bees and beekeeping on our forums. Find important articles from the experts all in one place.</h5>
+                            </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="now-ui-icons arrows-1_minimal-left"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="now-ui-icons arrows-1_minimal-right"></i>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        <footer class="footer" data-background-color="black">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.creative-tim.com">
+                                Creative Tim
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://blog.creative-tim.com">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                                MIT License
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>, Designed by
+                    <a href="https://github.com/zjivkas" target="_blank">Cassandra Caroline</a>. Inspired with elements from
+                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!--   Core JS Files   -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/popper.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/bootstrap.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/nouislider.min.js"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+</html>
+

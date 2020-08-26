@@ -1,0 +1,429 @@
+/* Thanks for amazing free Photos from by Boba Jaglicic,  Julius Drost, REVOLT, Maxim Ilyahov , Anggi Nurjaman and Annie Spratt on Unsplash */
+/* Thank you to https://www.beeweb.co/en for a lot of ideas. The web-developer is really professional! Volim tebe, Srbija! */
+/* Thank you to https://codepen.io/anuraghazra for the hexagon flower inspiration. Fantastic creative coding.  */
+/* For the Bee Icon, thank you Bryn Taylor from the Noun Project  */
+/* and for the fancy count-down timer, Thank you Matt Smith... I will be learning JS soon.... :) */
+
+.brand .h1-seo {
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 1px 1px 2px #2c2c2c;
+} 
+
+
+.h3, h3{
+    text-shadow: 1px 1px 2px #2c2c2c;
+}
+
+h4, h4 {
+    font-weight: 600 !important;
+}
+
+.h6, h6 {
+    font-size: 1.7em;
+}
+
+#market > div > div.card-body > p{
+    font-weight: 400 !important;
+}
+
+a{
+    color: #f96332;
+    font-weight: 400;   
+}
+
+.signup{
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+}
+
+.clock{
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #2c2c2c;
+    padding: 0.5em;
+  }
+  
+.clock span {
+    display: block;
+    font-size: 1rem;
+  }
+
+.clock-container{
+    padding-bottom: 0;
+}
+
+
+.p-btn{
+    font-family: 'Fredoka One', cursive;
+}
+
+.btn-primary {
+    background-color: #f96332;
+    color: #fff;
+    border-radius: 1.5rem!important;
+    font-size: larger;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.click-me{
+    color: white;
+}
+
+.btn.btn-icon:not(.btn-footer) i.fab, .btn.btn-icon:not(.btn-footer) i.now-ui-icons, .navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) i.fab, .navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) i.now-ui-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px,-12px);
+    line-height: 1.5626rem;
+    width: 160px;
+}
+
+.mt-5, .my-5 {
+    margin-top: -12rem!important;
+}
+
+.btn.btn-primary.btn-icon.btn-round{ 
+    margin-top: 100px;
+}
+
+.btn.btn-secondary{
+    background-color: #2c2c2c;
+    font-size: medium;
+}
+
+.cardinfo{
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.shopbtn{
+    width: fit-content;
+    height: 67px;
+}
+
+.btn.btn-icon, .navbar .navbar-nav>a.btn.btn-icon {
+    height: 4rem;
+    min-width: 4rem;
+    width: 18rem;
+    padding: 0;
+    font-size: 2rem;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+} 
+
+
+
+.now-ui-icons.ui-2_favourite-28:before {
+    color: #2c2c2c;
+    position: relative;
+    top: 0.5rem;
+    width: 20rem;
+}
+
+
+.section{
+    background: linear-gradient(45deg,rgba(44,44,44, .1), rgba(44,44,44,.8));
+    padding: 20px 0;
+}
+
+.bg-warning {
+    background-color: #e7cf9e!important;
+}
+
+.page-header{ 
+    margin-top: 0px;
+    min-height: 70vh;
+}
+
+.index-page .page-header {
+    height: 0vh;
+}
+
+
+.index-page .page-header .container>.content-center {
+    top: 50%;
+}
+
+.filter-for-photo{
+    background: linear-gradient(0deg,rgba(44,44,44, 0.1), rgba(44,44,44,.3));}
+
+.page-header .page-header-image {
+    position: absolute;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 80vh;
+    z-index: -1; 
+}
+
+.nav-tabs {
+    justify-content: space-around;
+    margin: 0 auto 0 auto;
+    transition: ease-in;
+    display: inline-block;
+}
+
+.nav-tabs:not(.nav-tabs-neutral)>.nav-item>.nav-link.active {
+    box-shadow: none;
+    color: #fff;
+}
+
+.nav-tabs>.nav-item>.nav-link {
+    color: #2c2c2c;
+    margin: 0;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 11px 23px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.nav-tabs>.nav-item>.nav-link.active {
+    background-color: transparent;
+    border-radius: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #2c2c2c;
+    bottom: 10px;
+}
+
+.nav-tabs>.nav-item>.nav-link {
+    margin: 0;
+    bottom: 10px;
+}
+
+
+.hb i {
+    z-index: 1;
+    margin: auto;
+    color: transparent;
+    background: #2c2c2c;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+.hb:before, .hb:after {
+    position: absolute;
+    content: "";
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.hb-custom:hover, .hb-custom:hover::after, .hb-custom:hover::before {
+    color: rgb(0, 0, 0) !important;
+    background: linear-gradient(to right,  #e37682, #f96332)!important;
+    border-left: 1px solid rgb(241, 196, 15) !important;
+    border-right: 1px solid rgb(241, 196, 15) !important;
+}
+
+.hb-custom, .hb-custom:after, .hb-custom:before {
+    background: #ebdfc8!important;
+    color: #fff!important;
+    /* border: 4px solid #f39c12!important; */
+    border-right: 4px solid #f39c12!important;
+}
+
+  .hb:before {
+    transform: rotateZ(60deg);
+  }
+  .hb:after {
+    transform: rotateZ(-60deg);
+  }
+  .hb:hover {
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  .hb:hover:before {
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  .hb:hover:after {
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  
+.pollination-img{
+    width: 50%;
+}  
+
+.market-img{
+    width: 50%;
+}
+
+.modal-content{
+    border-radius: 2rem;
+}
+
+.app-img{
+    box-shadow: 0 12px 34px 0 rgba(7, 9, 0, 0.5)
+}
+
+.carousel {
+    position: relative;
+    margin: 100px auto 0 auto;
+    width: 75%;
+}
+
+.now-ui-icons.arrows-1_minimal-right:before {
+    font-size: 5rem;
+}
+
+.now-ui-icons.arrows-1_minimal-left:before {
+    font-size: 5rem;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+
+.card-body {
+    margin-top: 25px;
+    }
+
+.app-img{
+    width: 50%;
+}
+
+
+
+@media screen and (max-width: 991px){
+    .sidebar-collapse .navbar-collapse:before {
+        background: linear-gradient(45deg, rgb(243, 156, 18), #f96332);;
+        opacity: 1;
+    }
+
+    .sidebar-collapse .navbar-collapse .navbar-nav:not(.navbar-logo) .nav-link:not(.btn) {
+        color: #fff!important;
+        font-size: 1.8rem;
+        line-height: 2;
+        float: left;
+    }
+
+    .nav-tabs>.nav-item>.nav-link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 778px){ 
+.nav-tabs .nav-item>.nav-link {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nav-tabs>.nav-item>.nav-link {
+    bottom: 19px;
+}
+
+.nav-tabs>.nav-item>.nav-link.active{
+    bottom: 19px;
+} 
+
+
+.h6, h6 {
+    font-size: 2.6rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.p-xs {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    font-weight: 600;
+    justify-content: center;
+    width: 6rem;
+    margin: 3rem auto 0 auto;
+    background-color: #ef9c04;
+}
+
+.navsm{ 
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+
+
+.hb i{ 
+    padding-left: 0;
+}
+
+.now-ui-icons:before {
+    font-size: 4.0rem !important;
+    padding-bottom: 7px;
+}
+
+.now-ui-icons.ui-2_favourite-28:before {
+    font-size: 2.0rem !important;
+}
+
+.card.cardinfo{
+    width: 90% !important;
+}
+
+.app-img{
+    width: 99%;
+}
+
+.pollination-img {
+    width: 90%;
+}
+
+
+.market-img {
+    width: 90%;
+}
+
+}
+
+
+@media screen and (orientation:landscape) and (max-width: 778px){
+    .mt-5, .my-5 {
+        margin-top: 3rem!important;
+    }
+
+    .index-page .page-header {
+        height: 110vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .h6, h6 {
+        display: none;
+    }
+
+}
+
+
